@@ -1,7 +1,4 @@
-def chunk_text(
-    text,
-    chunk_size=500
-):
+def chunk_documents(text, chunk_size=500):
 
     chunks = []
 
@@ -10,7 +7,6 @@ def chunk_text(
         len(text),
         chunk_size
     ):
-
         chunks.append(
             text[i:i+chunk_size]
         )
