@@ -1,6 +1,14 @@
-def predict_xray(image):
+import cv2
 
-    return {
-        "prediction": "Normal",
-        "confidence": 0.91
-    }
+def preprocess_xray(image_path):
+
+    image = cv2.imread(image_path)
+
+    image = cv2.resize(
+        image,
+        (224, 224)
+    )
+
+    image = image / 255.0
+
+    return image
