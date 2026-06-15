@@ -1,6 +1,11 @@
+from vector_database import (
+    search_vector_db
+)
+
 def retrieve(query):
 
-    return [
-        "Medical knowledge retrieved",
-        "Clinical guideline retrieved"
-    ]
+    documents = search_vector_db(
+        query
+    )
+
+    return documents
