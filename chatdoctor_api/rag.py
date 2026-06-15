@@ -1,9 +1,7 @@
 from medical_rag.retrieval import retrieve
 
-def retrieve_context(
-    query
-):
+def retrieve_context(query):
 
-    docs = retrieve(query)
+    documents = retrieve(query)
 
-    return "\n".join(docs)
+    return "\n".join(documents)
