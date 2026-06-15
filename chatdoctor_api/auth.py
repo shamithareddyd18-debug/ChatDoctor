@@ -1,10 +1,6 @@
 users = []
 
-def register_user(
-    username,
-    password,
-    role
-):
+def register_user(username, password, role):
 
     users.append({
         "username": username,
@@ -15,10 +11,7 @@ def register_user(
     return True
 
 
-def login_user(
-    username,
-    password
-):
+def login_user(username, password):
 
     for user in users:
 
