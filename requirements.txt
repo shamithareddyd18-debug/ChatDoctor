@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+numpy
+pandas
+opencv-python
+torch
+torchvision
+transformers
+sentence-transformers
+langchain
+qdrant-client
+easyocr
+pyzbar
+Pillow
+matplotlib
+scikit-learn
